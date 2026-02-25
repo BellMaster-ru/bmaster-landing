@@ -24,13 +24,40 @@ const benefits = [
 
 const gallery = [
   {
-    src: '/screenshots/dashboard-main.png',
+    src: '/screenshots/main.png',
     alt: 'Главная страница BMaster со списком звонков на сегодня',
     caption: 'Главная страница: звонки на сегодня',
   },
-  // Добавь сюда другие скриншоты по мере готовности:
-  // { src: '/screenshots/schedule.png', alt: 'Расписание BMaster', caption: 'Раздел расписаний' },
-  // { src: '/screenshots/announcements.png', alt: 'Трансляция объявлений', caption: 'Объявления' },
+  {
+    src: '/screenshots/schedules.png',
+    alt: 'Страница управления расписаниями с возможностью редактирования и создания шаблонов',
+    caption: 'Управление расписаниями и шаблонами звонков',
+  },
+  {
+    src: '/screenshots/calendar.png',
+    alt: 'Календарный вид с отображением назначенных звонков по датам',
+    caption: 'Календарь с возможностью назначения расписаний',
+  },
+  {
+    src: '/screenshots/announcements.png',
+    alt: 'Интерфейс для создания и отправки объявлений в реальном времени',
+    caption: 'Объявления в реальном времени',
+  },
+  {
+    src: '/screenshots/sounds.png',
+    alt: 'Раздел управления аудиофайлами и библиотекой звуков',
+    caption: 'Библиотека аудиофайлов',
+  },
+  {
+    src: '/screenshots/settings.png',
+    alt: 'Страница настроек системы с параметрами сервера и сети',
+    caption: 'Настройки системы и конфигурация',
+  },
+  {
+    src: '/screenshots/users.png',
+    alt: 'Раздел управления пользователями и ролями с разграничением прав доступа',
+    caption: 'Пользователи, роли и права доступа',
+  }
 ];
 ---
 
@@ -60,7 +87,7 @@ const gallery = [
       </div>
       <figure class="hero__media">
         <img
-          src="/screenshots/dashboard-main.png"
+          src="/screenshots/main.png"
           alt="Скриншот главной панели BMaster с расписанием звонков"
           loading="eager"
           decoding="async"
@@ -127,7 +154,7 @@ const gallery = [
         {gallery.map((shot) => (
           <a class="gallery-item" href={shot.src} target="_blank" rel="noopener noreferrer">
             <img src={shot.src} alt={shot.alt} loading="lazy" decoding="async" />
-            <span class="gallery-item__caption">{shot.caption} — открыть в полном размере</span>
+            <span class="gallery-item__caption">{shot.caption}</span>
           </a>
         ))}
       </div>

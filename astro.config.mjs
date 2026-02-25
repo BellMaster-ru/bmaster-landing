@@ -1,6 +1,6 @@
 // astro.config.mjs
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: 'https://bellmaster.ru',
+  site: "http://bellmaster.ru",
 });
